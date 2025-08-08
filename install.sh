@@ -3,6 +3,7 @@
 
 
 if (whiptail --title "pearOS aurorae installation wizard" --yesno "Do you want to install the default pearOS Window Decorations? This will include the normal and dark mode version." 8 78); then
+   mkdir -p /root/.local/share/aurorae/themes/
    cp -r ./* ~/.local/share/aurorae/themes/
 else
     echo "Installation closed by the user. Exit code is $?."
